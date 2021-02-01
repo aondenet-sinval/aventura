@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt">
+<title>Turismo de Aventura em Prado, BA</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="estilo.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">AVENTURA</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#inform" class="w3-button w3-block w3-black">INFO</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#vista" class="w3-button w3-block w3-black">VISTA</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container" id="home">
+<div class="w3-content w3-section" style="max-width:600px">
+  <img class="mySlides" src="ph8.jpeg" style="width:100%">
+  <img class="mySlides" src="ph9.jpeg" style="width:100%">
+  <img class="mySlides" src="ph10.jpeg" style="width:100%">
+</div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Turismo de aventura em Prado, BA</span></h5>
+    <p>A place of extreme beauty in the extreme south of Bahia. This is the city ... </p>
+    <p>Acesso principal por meio de rodovias..</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"Prado, um paraíso de aventuras" An adventure paradise .</i></p>
+      <p>Uma das cidades com mais recursos hospedeiros na Bahia...</p>
+    </div>
+    <img src="php1.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Acesso:</strong> estrada litorânea Prado - Cumuruxatiba.</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="inform">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">INFO e AVENTURE-SE</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Inf');" id="myLink">
+        <div class="w3-col s6 tablink">Dados</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Inf1');">
+        <div class="w3-col s6 tablink">+ Info</div>
+      </a>
+    </div>
+
+    <div id="Inf" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Info:</h5>
+     <p>
+<b>Local:</b> Rampa da Praia da Paixão/Barranco Branco(pop) - Prado - BA.<br>
+<b>Altitude:</b> 40 metros.<br>
+<b>Desnível:</b> 40 metros.<br>
+<b>Quadrante:</b> E (Leste), NE (Nordeste).<br>
+<b>WayPoint:</b> 17° 15' 56.66"S 39° 13' 12.295"W<br>
+<b>Acesso:</b> A 16 km da cidade de Prado por estrada de terra em ótimas condições. Acesso acima da Praia da Paixão. Morro baixo, junto a uma casa.<br>
+<b>Decolagem:</b> Natural, com desnível perfeito para decolagem, mesmo sendo o local uma região de falésias. Em geral vento favorável o ano todo.<br>
+<b>Pouso:</b> Na praia ou em cima.<br>   
+     </p>
+    </div>
+
+    <div id="Inf1" class="w3-container menu w3-padding-48 w3-card">
+      <h5>+ Info</h5>
+<b>Prós:</b> Pode-se permanecer horas voando no lift de mais de 20 km ao longo da costa bela vista costeira.<br>
+<b>Contras:</b> Devido à pouca altura da decolagem, o piloto deve curvar para a direita logo após entrar em voo, pois, caso saia da ação do vento, o pouso será inevitável. Deve-se ficar atento, pois o vento se intensifica após as 15:00h, dificultando a decolagem de parapente, vento nordeste, em geral.<br>
+<b>Recordista em Parapente:</b> Frank Brown, 19 km, voando até o povoado de Cumuruxatiba.<br>
+    </div>  
+    <img src="ph1.jpeg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="vista" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">VISTA DE BELEZA</span></h5>
+    <p>Um olhar nas falésias...</p>
+    <img src="ph3.jpeg" class="w3-image" style="width:100%">
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>
